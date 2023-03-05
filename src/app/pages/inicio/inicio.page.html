@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>IONIC UTVM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+  <ion-item *ngFor="let c of componentes" [routerLink]=c.redirectTo>
+    <ion-icon name={{c.icon}} slot="start"></ion-icon>
+    {{c.name}}
+  </ion-item>
+  <ion-item *ngFor="let c of componentes" [routerLink]=c.redirectTo1>
+    <ion-icon name={{c.icon1}} slot="start"></ion-icon>
+    {{c.name1}}
+  </ion-item>
+  </ion-list>
+  
+
+ <!-- <ion-button routerLink="/alert">page-alert</ion-button>
+  <ion-button color="warning" routerLink="/action">action</ion-button> -->
+</ion-content>
